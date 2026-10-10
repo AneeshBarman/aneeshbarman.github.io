@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aneesh Barman — Software Engineer, AI and Robotics portfolio and resume">
+  <title>Aneesh Barman | Software Engineer</title>
+
+  <style>
+    :root {
+      --navy: #17365d;
+      --blue: #285b91;
+      --text: #253247;
+      --muted: #64748b;
+      --line: #dce4ed;
+      --bg: #eef2f7;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    .toolbar {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 20px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 6px;
+      background: var(--navy);
+      color: white;
+      padding: 12px 18px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    button:hover { background: var(--blue); }
+
+    .resume {
+      max-width: 850px;
+      margin: 0 auto 32px;
+      padding: 38px 46px;
+      background: white;
+      box-shadow: 0 8px 30px #1e293b12;
+    }
+
+    header {
+      border-bottom: 3px solid var(--navy);
+      padding-bottom: 16px;
+      margin-bottom: 17px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      letter-spacing: .4px;
+      color: var(--navy);
+    }
+
+    .headline {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 3px 0 10px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 14px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    a {
+      color: var(--blue);
+      overflow-wrap: anywhere;
+    }
+
+    section { margin-top: 17px; }
+
+    h2 {
+      color: var(--navy);
+      font-size: 14px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 5px;
+      margin: 0 0 9px;
+    }
+
+    p { margin: 5px 0 8px; }
+
+    .education-item,
+    .project {
+      margin-bottom: 11px;
+      break-inside: avoid;
+    }
+
+    .item-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      font-weight: 700;
+    }
+
+    .date {
+      color: var(--muted);
+      font-size: 11px;
+      white-space: nowrap;
+      font-weight: 400;
+    }
+
+    .subheading {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 5px 0;
+    }
+
+    li { margin-bottom: 3px; }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 115px 1fr;
+      gap: 7px 12px;
+    }
+
+    .skill-name {
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .fit-list { margin-bottom: 0; }
+
+    footer {
+      margin-top: 18px;
+      padding-top: 8px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .resume {
+        margin: 0 10px 20px;
+        padding: 25px 20px;
+      }
+
+      h1 { font-size: 25px; }
+
+      .item-heading { flex-wrap: wrap; gap: 0; }
+
+      .skills { grid-template-columns: 1fr; gap: 2px; }
+      .skill-name { margin-top: 7px; }
+      .toolbar { padding: 14px 8px; }
+    }
+
+    @media print {
+      @page {
+        size: A4;
+        margin: 12mm;
+      }
+
+      body {
+        background: white;
+        font-size: 10pt;
+        line-height: 1.35;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .toolbar { display: none; }
+
+      .resume {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+
+      h1 { font-size: 23pt; }
+      h2 { font-size: 10pt; margin-bottom: 6px; }
+      section { margin-top: 12px; }
+      .project, .education-item { margin-bottom: 8px; }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="toolbar">
+    <button onclick="window.print()">Download Resume as PDF</button>
+  </div>
+
+  <main class="resume">
+    <header>
+      <h1>Aneesh Barman</h1>
+      <div class="headline">Software Engineer | AI &amp; Robotics</div>
+
+      <div class="contact">
+        <span>+91-9151119743</span>
+        <a href="mailto:aneesh.barman01@gmail.com">
+          aneesh.barman01@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/aneesh-barman-b36839224"
+           target="_blank" rel="noopener noreferrer">
+          LinkedIn Profile
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>
+        Detail-oriented Software Engineer with a B.Tech from KIIT (2024),
+        specializing in data structures and algorithms. Skilled in Python,
+        Java, C++, and SQL, with experience developing backend components
+        and integrating machine learning. Trained in competitive programming,
+        focusing on performance and maintainability. Aspire to excel in
+        backend and distributed systems engineering for scalable services
+        within Agile teams.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education &amp; Certification</h2>
+
+      <div class="education-item">
+        <div class="item-heading">
+          <span>AI and Machine Learning Certification — Masai</span>
+          <span class="date">August 2026</span>
+        </div>
+        <p>Training in machine learning concepts, model building, and applied AI.</p>
+      </div>
+
+      <div class="education-item">
+        <div class="item-heading">
+          <span>Kalinga Institute of Industrial Technology (KIIT)</span>
+          <span class="date">2020–2024</span>
+        </div>
+        <p>Bachelor of Technology (Engineering)</p>
+      </div>
+
+      <div class="education-item">
+        <div class="item-heading">
+          <span>The Aryan International School</span>
+          <span class="date">Graduated 2020</span>
+        </div>
+        <p>Class 12: 75% &nbsp; | &nbsp; Class 10: 75%</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-name">Programming</div>
+        <div>Python, C, C++, Java, JavaScript</div>
+
+        <div class="skill-name">Web</div>
+        <div>HTML5, CSS, React</div>
+
+        <div class="skill-name">Data &amp; AI</div>
+        <div>Machine Learning, Data Structures &amp; Algorithms, SQL, DBMS</div>
+
+        <div class="skill-name">Strengths</div>
+        <div>Problem-solving, clear communication, presentation,
+          teamwork, quick learner</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <div class="item-heading">
+          <span>Online Toxicity Prediction (Machine Learning)</span>
+          <span class="date">Python, ML</span>
+        </div>
+        <ul>
+          <li>Built a system that predicts and flags toxic or harmful language
+            in online text using machine learning techniques.</li>
+          <li>Designed to help platform moderators and users detect harmful
+            content quickly and take action.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="item-heading">
+          <span>Weather Website</span>
+          <span class="date">HTML, CSS, JavaScript</span>
+        </div>
+        <ul>
+          <li>Developed a responsive website providing real-time forecasts
+            for locations worldwide, including temperature, humidity,
+            wind speed, and precipitation probability.</li>
+          <li>Focused on an intuitive interface to help users plan their day.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="item-heading">
+          <span>Calculator Application</span>
+          <span class="date">Python</span>
+        </div>
+        <ul>
+          <li>Created a Python calculator for routine and complex calculations.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="item-heading">
+          <span>Tic Tac Toe Game</span>
+          <span class="date">Java</span>
+        </div>
+        <ul>
+          <li>Built an interactive two-player game with board logic and
+            automatic winner detection.</li>
+        </ul>
+      </div>
+
+      <div class="project">
+        <div class="item-heading">
+          <span>To-Do List / Task Manager</span>
+          <span class="date">Web</span>
+        </div>
+        <ul>
+          <li>Built a task-management tool to list, prioritize, and track
+            tasks by importance and urgency.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Why I Am a Fit for This Role</h2>
+      <ul class="fit-list">
+        <li><strong>Strong CS fundamentals:</strong> DSA, algorithms,
+          DBMS and SQL for efficient, scalable backend systems.</li>
+        <li><strong>Problem-solving mindset:</strong> Competitive-programming
+          practice and a focus on clean, testable logic.</li>
+        <li><strong>Multi-language engineering:</strong> Experience with
+          Java, Python and C++, with an interest in Go, microservices
+          and cloud tooling.</li>
+        <li><strong>Quality and ownership:</strong> Focus on reliable,
+          readable code and end-to-end project development.</li>
+        <li><strong>Team player:</strong> Clear communication and openness
+          to code reviews, feedback and Agile/SCRUM collaboration.</li>
+      </ul>
+    </section>
+
+    <footer>
+      Aneesh Barman | Software Engineer | AI &amp; Robotics
+    </footer>
+  </main>
+</body>
+</html>
